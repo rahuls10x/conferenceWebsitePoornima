@@ -222,10 +222,10 @@ body {
     margin: 0 0.5rem;
 }
 
-/* Welcome Section */
+/* About Section */
 .welcome {
     background: #f9fafb;
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .welcome .container {
@@ -249,11 +249,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-top: 1rem;
 }
 
 .image-grid img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 0.5rem;
 }
@@ -297,6 +298,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.3;
+    font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .welcome-text p {
@@ -322,6 +324,22 @@ body {
 .feature-item svg {
     color: #ec4899;
     flex-shrink: 0;
+}
+
+.btn-outline-1 {
+    border: 2px solid #ec4899;
+    background: transparent;
+    color: #ec4899;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-outline-1:hover {
+    background: white;
+    color: #581c87;
 }
 
 /* Schedule Section */
@@ -434,7 +452,7 @@ body {
 /* Speakers Section */
 .speakers {
     background: linear-gradient(135deg, #ec4899 0%, #9333ea 100%);
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .speakers h2 {
@@ -480,82 +498,10 @@ body {
     font-size: 0.875rem;
 }
 
-/* Tickets Section */
-.tickets {
-    background: white;
-    padding: 5rem 0;
-}
-
-.tickets h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.tickets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.ticket-card {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    transition: all 0.3s;
-}
-
-.ticket-card.featured {
-    background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);
-    color: white;
-    border: none;
-    transform: scale(1.05);
-}
-
-.ticket-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.ticket-header {
-    margin-bottom: 2rem;
-}
-
-.ticket-header h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.ticket-price {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-
-.ticket-features {
-    list-style: none;
-    margin-bottom: 2rem;
-}
-
-.ticket-features li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.ticket-card.featured .ticket-features li {
-    border-bottom-color: rgba(255, 255, 255, 0.2);
-}
-
-.ticket-features li:last-child {
-    border-bottom: none;
-}
-
 /* Sponsors Section */
 .sponsors {
     background: #f9fafb;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .sponsors h2 {
@@ -590,7 +536,7 @@ body {
 /* Gallery Section */
 .gallery {
     background: white;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .gallery-grid {
@@ -643,44 +589,6 @@ body {
 .footer .logo {
     color: white;
     margin-bottom: 1rem;
-}
-
-.newsletter {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.newsletter input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border-radius: 9999px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 0.875rem;
-}
-
-.newsletter input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.newsletter button {
-    background: #ec4899;
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-size: 1.25rem;
-}
-
-.newsletter button:hover {
-    background: #db2777;
 }
 
 .footer-bottom {
