@@ -107,8 +107,8 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
-    opacity: 0.1;
+    background: url('https://image-static.collegedunia.com/public/college_data/images/campusimage/1624441644Campus%20Image.jpg') center/cover;
+    opacity: 0.3;
     z-index: 1;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(3rem, 4vw, 6rem);
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 2rem;
