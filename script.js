@@ -89,23 +89,28 @@ function handleTicketPurchase(ticketType, price) {
 }
 
 function updateCountdown() {
-    const eventDate = new Date('2025-03-12').getTime();
+    // time format (YYYY, MM-1, DD, HH, MM, SS)
+    const targetTime = new Date(2026, 4, 23, 0, 0, 0);
 
-    function updateDisplay() {
-        const now = new Date().getTime();
-        const distance = eventDate - now;
+    function updateTimer() {
+        const now = new Date();
+        const diff = targetTime - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if (diff <= 0) return;
 
-        if (distance > 0) {
-            setTimeout(updateDisplay, 1000);
-        }
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.querySelectorAll(".stat-number")[0].textContent = days;
+        document.querySelectorAll(".stat-number")[1].textContent = hours;
+        document.querySelectorAll(".stat-number")[2].textContent = minutes;
+        document.querySelectorAll(".stat-number")[3].textContent = seconds;
     }
 
-    updateDisplay();
+    setInterval(updateTimer, 1000);
+    updateTimer();
 }
 
 updateCountdown();
