@@ -28,7 +28,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(88, 28, 135, 0.95) 0%, rgba(139, 35, 92, 0.95) 100%);
+    background: transparent;;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .btn-primary {
-    background: #9333ea;
+    background: #2068B3;
     color: white;
     border: none;
     padding: 0.5rem 1.5rem;
@@ -130,10 +130,11 @@ li:hover > .submenu {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #581c87 0%, #8b235c 50%, #6d1e6d 100%);
+    background: linear-gradient(0deg, #2068B3, #A2BABC);
     padding-top: 100px;
     overflow: hidden;
 }
+
 
 .hero::before {
     content: '';
@@ -164,7 +165,7 @@ li:hover > .submenu {
 }
 
 .hero-content .year {
-    color: #ec4899;
+    color: #e0fbff;
     font-size: clamp(2rem, 8vw, 5rem);
 }
 
