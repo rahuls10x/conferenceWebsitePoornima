@@ -221,6 +221,42 @@ li:hover > .submenu {
     color: #9333ea;
 }
 
+.organizers{
+    display: flex;
+    gap: 20px;
+}
+
+.organizer{
+    display: flex;
+    /* background-color: #7e22ce; */
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.organizer img{
+    width: 150px;
+    height: 150px;
+}
+.organizer h2{
+    flex-grow: 1;   
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seperator{
+    width: 1px;
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .organizers {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .stats {
     display: flex;
     align-items: center;
@@ -483,7 +519,7 @@ li:hover > .submenu {
 
 /* Speakers Section */
 .speakers {
-    background: linear-gradient(135deg, #ec4899 0%, #9333ea 100%);
+    background: linear-gradient(0deg, #4c7fb5, #A2BABC);
     padding: 3rem 0;
 }
 
@@ -498,6 +534,17 @@ li:hover > .submenu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
+}
+
+.dualSections{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .dualSections{
+        display: block;
+    }
 }
 
 .speaker-card {
@@ -591,7 +638,7 @@ li:hover > .submenu {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #581c87 0%, #8b235c 100%);
+    background: linear-gradient(0deg, #2068B3, #349ea7);
     color: white;
     padding: 3rem 0 1.5rem;
 }
