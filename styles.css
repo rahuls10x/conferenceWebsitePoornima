@@ -700,3 +700,50 @@ li:hover > .submenu {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Conference Tracks Table ===== */
+.tracks-table-wrapper {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.tracks-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.tracks-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.tracks-table th,
+.tracks-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tracks-table th {
+    background: #9333ea;
+    color: white;
+    font-weight: 600;
+}
+
+.tracks-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.tracks-table td:first-child {
+    font-weight: 600;
+    color: #581c87;
+    width: 120px;
+}
