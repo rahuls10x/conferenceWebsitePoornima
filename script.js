@@ -90,7 +90,7 @@ function handleTicketPurchase(ticketType, price) {
 
 function updateCountdown() {
     // time format (YYYY, MM-1, DD, HH, MM, SS)
-    const targetTime = new Date(2026, 4, 23, 0, 0, 0);
+    const targetTime = new Date(2026, 3, 24, 0, 0, 0);
 
     function updateTimer() {
         const now = new Date();

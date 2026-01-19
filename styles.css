@@ -184,8 +184,8 @@ li:hover > .submenu {
 }
 
 .info-item svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .btn-outline {
@@ -316,7 +316,7 @@ li:hover > .submenu {
 }
 
 .badge-number {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #9333ea;
 }
