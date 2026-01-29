@@ -80,14 +80,15 @@ body {
 }
 
 .btn-primary {
-  background: #2068b3;
-  color: white;
-  border: none;
-  padding: 0.5rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s;
+    background: #2068B3;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 0.25rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .btn-primary:hover {
@@ -196,7 +197,7 @@ li:hover > .submenu {
 }
 
 .footer {
-    background: linear-gradient(0deg, #2068B3, #349ea7);
+    background: #0066cc;;
     color: white;
     padding: 3rem 0 1.5rem;
 }
