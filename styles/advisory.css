@@ -28,7 +28,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: transparent;;
+    background: #349ea7;;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -83,13 +83,13 @@ body {
     background: #2068B3;
     color: white;
     border: none;
-    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    padding: 0.25rem 1.25rem;
     border-radius: 9999px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .btn-primary:hover {
     background: #7e22ce;
 }
@@ -123,53 +123,10 @@ li:hover > .submenu {
     color: #000;
 }
 
-/* ===== PAGE BACKGROUND ===== */
-.paper-center {
-  position: relative;
-  min-height: 100vh;
-  padding-top: 120px; /* for fixed navbar */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(0deg, #0066cc, #0066cc);
-  overflow: hidden;
-}
 
-.paper-center::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("https://image-static.collegedunia.com/public/college_data/images/campusimage/1624441644Campus%20Image.jpg")
-    center / cover;
-  opacity: 0.35;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* ===== CONTENT BOX ===== */
-.paper-box {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 40px;
-  text-align: center;
-  color: #fff;
-}
-
-.paper-box h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
-}
-
-.paper-box p {
-  font-size: 20px;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-
+/* Footer */
 .footer {
-    background: linear-gradient(0deg, #2068B3, #349ea7);;
+    background: linear-gradient(0deg, #2068B3, #349ea7);
     color: white;
     padding: 3rem 0 1.5rem;
 }
@@ -230,4 +187,22 @@ li:hover > .submenu {
     .features {
         grid-template-columns: 1fr;
     }
+}
+
+.advisory-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: #ffffff;
+}
+
+.advisory-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.advisory-table tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
